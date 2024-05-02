@@ -1,0 +1,33 @@
+/* Testimonials.css */
+
+.testimonial-card {
+   display: none;
+   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+ }
+ 
+ .testimonial-card.active {
+   display: block;
+   opacity: 1;
+   transform: translateX(0);
+ }
+ 
+ .marquee--inner:hover {
+   animation-play-state: paused;
+ }
+ 
+ /*.half {
+   float: left;
+   width: 10%;
+ }*/
+ 
+ span {
+   float: left;
+   width: 50%;
+ }
+ 
+ @keyframes marquee {
+   0% { left: 0; }
+   100% { left: -100%; }
+ }
+ /* Add other styles for your testimonials as needed */
+ 
